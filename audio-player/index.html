@@ -13,7 +13,6 @@
 </head>
 <body>
     <main>
-        <audio src="./assets/audio/after-dark.mp3"></audio>
         <div class="container">
             <div class="audio-player">
                 <div class="audio-img"></div>
@@ -21,7 +20,7 @@
                     <h1 class="song-title">After Dark</h1>
                     <h2 class="song-artist">Mr. Kitty</h2>
                     <div class="audio-buttons">
-                        <button class="audio-btn">
+                        <button class="audio-btn btn-prev">
                             <svg class="icon">
                                 <use xlink:href="./assets/svg/sprite.svg#backward"></use>
                             </svg>
@@ -31,7 +30,12 @@
                                 <use xlink:href="./assets/svg/sprite.svg#play"></use>
                             </svg>
                         </button>
-                        <button class="audio-btn">
+                        <button class="audio-btn btn-pause hidden">
+                            <svg class="icon pause">
+                                <use xlink:href="./assets/svg/sprite.svg#pause"></use>
+                            </svg>
+                        </button>
+                        <button class="audio-btn btn-next">
                             <svg class="icon">
                                 <use xlink:href="./assets/svg/sprite.svg#forward"></use>
                             </svg>
@@ -58,5 +62,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

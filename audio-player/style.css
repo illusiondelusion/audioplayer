@@ -109,6 +109,16 @@ a:hover {
     height: 45px;
 }
 
+.btn-pause {
+    width: 72px;
+    height: 72px;
+}
+
+.pause {
+    width: 45px;
+    height: 45px;
+}
+
 .icon:hover {
     fill: rgb(49, 10, 190);
 }
@@ -155,4 +165,8 @@ a:hover {
 
 .rs-logo:hover {
     filter: invert(17%) sepia(66%) saturate(5086%) hue-rotate(252deg) brightness(69%) contrast(127%);
+}
+
+.hidden {
+    display: none;
 }
