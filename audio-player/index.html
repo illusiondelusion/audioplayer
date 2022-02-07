@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio player</title>
+    <title>Audio player</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <audio src="./assets/audio/after-dark.mp3"></audio>
+        <div class="container">
+            <div class="audio-player">
+                <div class="audio-img"></div>
+                <div class="audio-info">
+                    <h1 class="song-title">After Dark</h1>
+                    <h2 class="song-artist">Mr. Kitty</h2>
+                    <div class="audio-buttons">
+                        <button class="audio-btn">
+                            <svg class="icon">
+                                <use xlink:href="./assets/svg/sprite.svg#backward"></use>
+                            </svg>
+                        </button>
+                        <button class="audio-btn btn-play">
+                            <svg class="icon play">
+                                <use xlink:href="./assets/svg/sprite.svg#play"></use>
+                            </svg>
+                        </button>
+                        <button class="audio-btn">
+                            <svg class="icon">
+                                <use xlink:href="./assets/svg/sprite.svg#forward"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <input type="range" value="40" min="0" max="100" step="1" class="progress">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <span>© 2022</span> 
+                <div>
+                    <svg class="icon">
+                    <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                    </svg>
+                    <a href="https://github.com/illusiondelusion/">illusiondelusion</a>
+                </div>
+                <button onclick="window.location.href = 'https://rs.school/js-stage0/';" class="rs-logo">
+                </button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
