@@ -82,3 +82,11 @@ function playPrev() {
 
 prevBtn.addEventListener('click', playPrev);
 nextBtn.addEventListener('click', playNext);
+
+const durationTime = document.getElementById('duration-time');
+
+
+console.log(`Уважаемый проверяющий! \n
+Я ошибочно сабмитнула ссылку с аудиоплеером в eco-sounds, progress-bar в процессе доработки. \n
+Заранее прошу прощения :) `);
+

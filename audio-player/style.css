@@ -13,6 +13,7 @@ body {
     backdrop-filter: blur(3px);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 100;
     font-size: 18px;
@@ -33,12 +34,12 @@ h2 {
 a {
     text-decoration: none;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
     transition: 0.3s;
 }
 
 a:hover {
-    color: rgb(142, 111, 255);
+    color: rgb(49, 10, 190);
 }
 
 .container {
@@ -47,9 +48,9 @@ a:hover {
 }
 
 .audio-player {
-    max-width: 300px;
+    max-width: 290px;
     background-color: rgba(255, 255, 255, 0.3);
-    height: 600px;
+    height: 570px;
     border-radius: 30px;
     margin: 40px auto;
     filter: drop-shadow(0px 9px 12px rgba(0, 0, 0, 0.25));
@@ -59,16 +60,20 @@ a:hover {
     background-image: url('./assets/img/after-dark.jpg');
     background-position: center;
     background-size: contain;
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 290px;
     border-radius: 30px;
     box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 30px 50px rgba(46, 10, 3, 0.88));
+    filter: drop-shadow(0px 30px 50px rgba(6, 3, 46, 0.88));
 }
 
 .audio-info {
     margin-top: 50px;
     text-align: center;
+}
+
+.song-artist {
+    color:rgb(21, 4, 83)
 }
 
 .audio-buttons {
@@ -125,7 +130,7 @@ a:hover {
 
 .progress {
     margin-top: 40px;
-    width: 250px;
+    width: 240px;
     background: rgba(0, 0, 0, 0.7);
     -webkit-appearance: none;
     appearance: none;
@@ -148,6 +153,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     font-weight: 400;
+    color: #ffffff;
 }
 
 .rs-logo {
@@ -161,6 +167,10 @@ a:hover {
     border: none;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.github {
+    fill: #ffffff;
 }
 
 .rs-logo:hover {
