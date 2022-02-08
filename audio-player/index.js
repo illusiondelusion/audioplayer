@@ -83,8 +83,28 @@ function playPrev() {
 prevBtn.addEventListener('click', playPrev);
 nextBtn.addEventListener('click', playNext);
 
-const durationTime = document.getElementById('duration-time');
 
+const currentTime = document.querySelector('.current-time');
+
+const calculateTime = (sec) => {
+    const minutes = Math.floor(sec / 60);
+    const seconds = Math.floor(sec % 60);
+    const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+    return `${minutes}:${returnedSeconds}`;
+}
+
+const displayDuration = () => {
+    const durationTime = document.querySelector('.duration-time');
+    durationTime.textContent = calculateTime(audio.duration);
+}
+  
+  if (audio.readyState > 0) {
+    displayDuration();
+  } else {
+    audio.addEventListener('loadeddata', () => {
+      displayDuration();
+    });
+  }
 
 console.log(`Уважаемый проверяющий! \n
 Я ошибочно сабмитнула ссылку с аудиоплеером в eco-sounds, progress-bar в процессе доработки. \n

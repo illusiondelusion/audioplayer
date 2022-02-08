@@ -177,6 +177,41 @@ a:hover {
     filter: invert(17%) sepia(66%) saturate(5086%) hue-rotate(252deg) brightness(69%) contrast(127%);
 }
 
+@media (max-width: 650px) {
+    .audio-player {
+        height: 520px;
+        margin: 30px auto;
+        max-width: 265px;
+    }
+
+    .audio-img {
+        width: 265px;
+        height: 265px;
+    }
+
+    .audio-info {
+        margin-top: 35px;
+    }
+
+    .progress {
+        width: 220px;
+    }
+}
+
+@media (max-width: 320px) {
+    .audio-player {
+        height: 520px;
+        margin: 20px auto;
+        max-width: 250px;
+    }
+
+    .audio-img {
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
 .hidden {
     display: none;
 }
