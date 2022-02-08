@@ -73,6 +73,7 @@ a:hover {
 }
 
 .song-artist {
+    margin-top: 4px;
     color:rgb(21, 4, 83)
 }
 
@@ -146,6 +147,14 @@ a:hover {
     background: rgb(49, 10, 190);
   }
 
+.track-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20px;
+    color:rgb(21, 4, 83);
+}
+
 .footer-container {
     height: 60px;
     display: flex;
@@ -179,7 +188,7 @@ a:hover {
 
 @media (max-width: 650px) {
     .audio-player {
-        height: 520px;
+        height: 535px;
         margin: 30px auto;
         max-width: 265px;
     }
