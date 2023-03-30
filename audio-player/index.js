@@ -17,7 +17,7 @@ const tracks = [
         'artist': 'Mr. Kitty',
         'cover': './assets/img/after-dark.jpg',
         'background': './assets/img/after-dark-bg.jpg',
-    }, 
+    },
     {
         'src': './assets/audio/one-for-the-road.mp3',
         'title': 'One For The Road',
@@ -31,7 +31,7 @@ const tracks = [
         'artist': 'Parks, Squares and Alleys',
         'cover': './assets/img/were-not-just-friends.jpg',
         'background': './assets/img/were-not-just-friends-bg.jpg',
-    }, 
+    },
     {
         'src': './assets/audio/when-i-grow-up.mp3',
         'title': 'When I Grow Up',
@@ -40,7 +40,7 @@ const tracks = [
         'background': './assets/img/when-i-grow-up-bg.jpg',}
 ];
 
-function playAudio() { 
+function playAudio() {
   const track = tracks[playNum];
   audio.src = track.src;
   audio.currentTime = 0;
@@ -126,8 +126,4 @@ audio.addEventListener('timeupdate', () => {
     progress.value = Math.floor(audio.currentTime);
     currentTime.textContent = calculateTime(progress.value);
   });
-
-
-console.log(`Уважаемый проверяющий! \n
-Я ошибочно сабмитнула ссылку с аудиоплеером в eco-sounds, заранее прошу прощения :) `);
 
